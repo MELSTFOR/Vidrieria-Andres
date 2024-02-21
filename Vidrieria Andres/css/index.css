@@ -252,6 +252,8 @@ body {
   max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
   max-height: 100%; /* Ajusta la altura máxima de la imagen */
   opacity: 0.6;
+  flex-direction: column;
+  margin-left: -25px;
 }
 
 .header-content {
@@ -284,8 +286,8 @@ body {
   font-size: 65px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center; /* Centrar el texto horizontalmente */
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-content .secondline {
