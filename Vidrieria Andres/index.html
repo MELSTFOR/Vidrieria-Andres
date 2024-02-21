@@ -389,15 +389,15 @@
                  <div class="form-header">
                      Formulario
                  </div>
-                 <form id="myForm" action="#">
+                 <form id="myForm" action="https://formspree.io/f/xkndrlkj" method="POST">
                     <div class="input-line">
-                        <input  id="name" type="text" placeholder="Nombre" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                        <input id="name" type="text" placeholder="Nombre" class="input-name" name="name" required>
+                        <input id="email" type="email" placeholder="Email" class="input-name" name="_replyto" required>
                     </div>
-                    <input type="text" id="subject" placeholder="Asunto" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="Mensaje"></textarea>
-                    <button type="button" id ="submit" value="send">Enviar</button>
-                 </form>
+                    <input type="text" id="subject" placeholder="Asunto" class="input-subject" name="_subject" required>
+                    <textarea id="body" class="input-textarea" placeholder="Mensaje" name="message" required></textarea>
+                    <button type="submit" id="submit" value="send">Enviar</button>
+                </form>
                
              </div>
             <!--Contact form-->
