@@ -831,6 +831,21 @@ body {
   color: whitesmoke;
   font-weight: 400;
 }
+
+.header-caption2 {
+  opacity: 1;
+  display: block;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 8px;
+  padding-top: 15px;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.color3d {
+  color: yellow;
+}
 .portfolio {
   height: auto;
   width: 100%;
@@ -1297,6 +1312,127 @@ form button:hover {
   color: black;
   transition: all 0.4s ease;
 }
+
+.impresion-3d {
+  text-align: center; /* Para centrar horizontalmente */
+  font-family: "Impact", Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Fuente */
+  color: white; /* Color blanco */
+  -webkit-text-stroke-width: 1px; /* Ancho del contorno */
+  -webkit-text-stroke-color: black; /* Color del contorno */
+  font-size: 80px; /* Tamaño de letra más grande */
+  margin-bottom: 20px; /* Margen inferior */
+  display: block; /* Cambia a display block */
+  padding: 130px; /* Agrega un padding */
+}
+@media screen and (max-width: 768px) {
+  .impresion-3d {
+    font-size: 40px; /* Reducir el tamaño de la fuente para dispositivos móviles */
+    padding: 82px; /* Ajustar el padding para dispositivos móviles */
+  }
+}
+
+.project-info {
+  text-align: left; /* Centra el contenido */
+  margin-top: -85px; /* Separación entre el nombre del proyecto y la descripción */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container {
+  padding: 20px; /* Agrega un padding alrededor del contenido */
+  margin: 20px; /* Agrega un margen alrededor del contenedor */
+}
+
+.project-info h3 {
+  text-align: center; /* Centra el contenido */
+  margin-top: -122px; /* Separación entre el nombre del proyecto y la descripción */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke-width: 1px; /* Ancho del contorno */
+  -webkit-text-stroke-color: black; /* Color del contorno */
+  font-size: 50px;
+}
+
+.project-logo {
+  text-align: center;
+}
+
+.project-logo img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-gallery .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-gallery .image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
+}
+
+.project-gallery .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-gallery .image:hover .overlay {
+  opacity: 1;
+}
+
+.project-gallery .image:hover img {
+  transform: scale(1.05);
+}
+
+.social-container {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente al centro */
+  align-items: center; /* Alinea verticalmente al centro */
+  height: 10vh; /* Ajusta la altura según la pantalla */
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center; /* Alinea los elementos hijos horizontalmente al centro */
+  align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+}
+
+.social-buttons a {
+  margin: 0 20px; /* Espacio entre los iconos */
+}
+
+.social-buttons img {
+  width: auto; /* Ajusta el ancho de las imágenes según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease; /* Agrega una transición suave al efecto hover */
+}
+
+.social-buttons img:hover {
+  transform: scale(
+    1.2
+  ); /* Escala la imagen en un 20% más grande al hacer hover */
+}
+
 .color-changer-active {
   right: 0px;
   transition: all 0.4s ease;
@@ -1342,8 +1478,8 @@ form button:hover {
   height: 100%;
   width: 100%;
 }
-.color-red {
-  background: #c70039;
+.color-grey {
+  background: #afa7a7;
 }
 .color-purple {
   background: #481380;
@@ -1524,6 +1660,7 @@ For devices with smaller width like mobile phone
     opacity: 0.8;
     font-size: 15px;
   }
+
   .about-main {
     display: flex;
     align-items: center;
