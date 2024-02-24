@@ -1330,6 +1330,7 @@ form button:hover {
     font-size: 40px; /* Reducir el tamaño de la fuente para dispositivos móviles */
     padding: 82px; /* Ajustar el padding para dispositivos móviles */
     margin: auto;
+    min-width: 200px;
   }
 }
 
@@ -1353,6 +1354,7 @@ form button:hover {
   -webkit-text-stroke-width: 1px; /* Ancho del contorno */
   -webkit-text-stroke-color: black; /* Color del contorno */
   font-size: 50px;
+  min-width: 200px;
 }
 
 .project-logo {
@@ -1424,8 +1426,8 @@ form button:hover {
 }
 
 .social-buttons img {
-  width: auto; /* Ajusta el ancho de las imágenes según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 70%; /* Ajusta el ancho de las imágenes según sea necesario */
+  height: 70%; /* Mantiene la proporción de la imagen */
   transition: transform 0.3s ease; /* Agrega una transición suave al efecto hover */
 }
 
