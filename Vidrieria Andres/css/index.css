@@ -61,6 +61,7 @@ body {
   position: relative;
   display: block;
 }
+
 #particles {
   position: absolute;
   top: 0;
@@ -1328,6 +1329,7 @@ form button:hover {
   .impresion-3d {
     font-size: 40px; /* Reducir el tamaño de la fuente para dispositivos móviles */
     padding: 82px; /* Ajustar el padding para dispositivos móviles */
+    margin: auto;
   }
 }
 
@@ -1346,7 +1348,7 @@ form button:hover {
 
 .project-info h3 {
   text-align: center; /* Centra el contenido */
-  margin-top: -122px; /* Separación entre el nombre del proyecto y la descripción */
+  margin-top: -80px; /* Separación entre el nombre del proyecto y la descripción */
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   -webkit-text-stroke-width: 1px; /* Ancho del contorno */
   -webkit-text-stroke-color: black; /* Color del contorno */
@@ -1536,7 +1538,7 @@ For devices with smaller width like mobile phone
 
 */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
   .header-content {
     height: 100vh;
     width: 100%;
